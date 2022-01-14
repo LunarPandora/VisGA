@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 180, in script
+    jump follow_haru
+ScriptError: could not find label 'follow_haru'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 180, in script
+    jump follow_haru
+  File "renpy/ast.py", line 1757, in execute
+    rv = renpy.game.script.lookup(target)
+  File "renpy/script.py", line 918, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'follow_haru'.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.11.2266
+VisGA 1.0
+Fri Jan 14 23:10:03 2022
